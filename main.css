@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    padding: 16px 0;
+    background-color: rgb(140, 132, 235);
+    color: #fff;
+    display: flex;
+    border-bottom: 8px solid rgb(125, 117, 205);
+    justify-content: center;
+}
+
+header button {
+    margin-left: 16px;
+    padding: 8px;
+    background-color: rgb(56, 195, 56);
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+form {
+    display: none;
+    padding: 24px 0;
+    text-align: center;
+    background-color: rgb(201, 137, 254);
+    color: #fff;
+}
+
+form h2 {
+    padding: 16px;
+}
+
+input, button {
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    background-color: rgb(56, 195, 56);
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#btn-cancel {
+    background-color: rgb(234, 67, 67);
+}
+
+ul {
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden;
+}
+
+ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.698);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 16px;
+    width: 100%;
+    opacity: 0;
+    transition: all ease 1s;
+}
+
+.overlay a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+ul li:hover .overlay{
+    opacity: 1;
+}
